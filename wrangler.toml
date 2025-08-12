@@ -1,3 +1,13 @@
 name = "my-astro-worker"
-main = "./dist/worker/index.js"
+main = "./dist/_worker.js"  # Updated to match Astro Cloudflare adapter output
 compatibility_date = "2024-08-01"
+
+# Optional: enable Node.js compatibility if you use Node APIs.
+# compatibility_flags = ["nodejs_compat"]
+
+# If you're using KV or other bindings, define them here:
+# [vars]
+# MY_ENV_VAR = "value"
+# [[kv_namespaces]]
+# binding = "SESSION"
+# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
